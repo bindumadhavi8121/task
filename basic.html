@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic task</title>
+    <h2>Basic task</h2>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form onsubmit="task(event)">
+    
+    <div>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname" >
+
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname" >
+
+    </div>
+    <br>
+    
+    <div>
+        <label for="email">email:</label>
+        <input type="email" id="email" name="email">
+        
+        <input type="color" id="colorPicker">
+        <button onclick="changeBackground()">Color</button>
+        
+        <script src="task.js"></script>
+
+    </div>
+    <br>
+
+    <div>
+        <label for="pass">password:</label>
+        <input type="password" id="pass" placeholder="enter password" maxlength="8" required>
+        
+        <label for="luckyNumber">Lucky Number:</label>
+        <input type="number" id="luckyNumber" name="luckyNumber">
+  
+        <button onclick="checkNumber()">Even or odd
+        </button>
+
+        <p id="result"></p>
+        
+
+    </div>
+
+    
+    <br>
+    <div>
+        <label for="hobbies">Hobbies:</label>
+        <select id="hobbies" name="hobbies">
+
+            <option value=""></option>
+            <option value="Dancing">Dancing</option>
+            <option value="Singing">singing</option>
+            <option value="Reading Books">Reading</option>
+            <option value="cooking">cooking</option>
+            <option value="Gardening">Gardening</option>
+
+        </select>
+    </div>
+    <br>
+
+     
+    <div class="form-group">
+        <label for="comment">Comment-box:</label>
+        <textarea id="Comment-box" type="text" name="Comment-box" oninput="count()" placeholder="type your comment here"></textarea>
+        <p id="count"></p>
+    </div>
+                 
+                    
+    </div>
+
+    </div>
+    <br>
+    <div>
+    <input type="Reset">
+    <button onclick="task()">Submit</button>
+    
+    
+    </div>
+    </form>
+    
+</body>
+</html>
+

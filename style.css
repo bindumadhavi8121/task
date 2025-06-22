@@ -1,0 +1,13 @@
+h2 {
+    text-align: center;
+    text-shadow: 0px 5px 5px rgb(110, 9, 9), 0px -5px 5px yellow;
+    box-shadow: 0px 0px 0px black;
+}
+
+body{
+    text-align: center;
+}
+.form-group {
+    max-height: 190px;
+    border: 0cap;
+}
